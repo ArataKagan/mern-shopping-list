@@ -20,6 +20,7 @@
     "mongoose": "^5.4.11"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "redux-devtools-extension": "^2.13.8"
   }
 }
