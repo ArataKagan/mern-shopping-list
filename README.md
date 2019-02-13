@@ -1,6 +1,7 @@
 # mern-shopping-list 
 
 This is Shopping List app made with Node, Express, React/Redux, and MongoDB with Restful API architecture. 
+Please check out the production site from [here](https://guarded-crag-55709.herokuapp.com/)
 
 ## Technologies to be used 
 
