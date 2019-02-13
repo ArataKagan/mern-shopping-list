@@ -1,8 +1,9 @@
-import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEMS_LOADING } from '../actions/types';
+import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEM_PURCHASED, ITEMS_LOADING} from '../actions/types';
 
 const initialState = {
     items: [],
-    loading: false
+    loading: false,
+    isPurchased: false
 }
 
 export default function(state = initialState, action) {
@@ -22,6 +23,11 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 items: [action.payload, ...state.items]
+            };
+        case ITEM_PURCHASED: 
+            return {
+                ...state,
+                
             };
         case ITEMS_LOADING:
             return {

@@ -33,5 +33,21 @@ router.delete('/:id', (req, res) => {
    .catch(err => res.status(404).json({success: false}));
 })
 
+// router.put('/:id', (req, res) => {
+//     Item.findById(req.params.id, function(err, item){
+//         if(err)
+//             res.send(err);
+//         console.log('inside of items.js');
+//         if(item.isPurchased === false){
+//             Item.update({'isPurchased': true});
+//             console.log('set true');
+//         } else {
+//             Item.update({'isPurchased': false});
+            
+//         }
+//     })
+    
+// })
+
 
 module.exports = router;

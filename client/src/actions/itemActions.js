@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEMS_LOADING } from './types';
+import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEM_PURCHASED, ITEMS_LOADING } from './types';
 
 export const getItems = () => dispatch => {
     dispatch(setItemsLoading());
@@ -32,6 +32,16 @@ export const deleteItem = id => dispatch => {
     })
 )
 };
+
+export const purchasedItem = id => dispatch => {
+    axios
+        .post(`api/items/${id}`, {isPurchased: true})
+        .then(res => 
+            dispatch({
+                type: ITEM_PURCHASED,
+                payload: id
+            }))
+}
 
 export const setItemsLoading = () => {
     return {

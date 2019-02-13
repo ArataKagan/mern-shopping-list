@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
+import { Container, ListGroup, ListGroupItem, Button} from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux'; 
-import { getItems, deleteItem } from '../actions/itemActions';
+import { getItems, deleteItem, purchasedItem} from '../actions/itemActions';
 import PropTypes from 'prop-types'
 
 
@@ -15,6 +15,10 @@ class ShoppingList extends Component {
     onDeleteClick = id => {
         this.props.deleteItem(id);
     } 
+
+    onPurchasedClick = id => {
+        this.props.purchasedItem(id);
+    }
  
     render() {
         const { items } = this.props.item;
@@ -31,6 +35,7 @@ class ShoppingList extends Component {
                                     size="sm"
                                     onClick={this.onDeleteClick.bind(this, _id)}
                                 >&times;</Button>
+                                <input name="isPurchased" type="checkbox" onChange={this.onPurchasedClick.bind(this, _id)}/>
                                     {name}
                                 </ListGroupItem>
                             </CSSTransition>
@@ -54,5 +59,5 @@ const mapStateToProps = (state) => ({
 
 export default connect(
     mapStateToProps, 
-    { getItems, deleteItem }
+    { getItems, deleteItem, purchasedItem }
 )(ShoppingList);
