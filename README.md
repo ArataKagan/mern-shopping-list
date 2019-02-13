@@ -1,5 +1,12 @@
 # mern-shopping-list 
 
+This is Shopping List app made with Node, Express, React/Redux, and MongoDB with Restful API architecture. 
+
+## Technologies to be used 
+
+
+
+
 ## How to Clone 
 
 1. git clone https://github.com/ArataKagan/mern-shopping-list
@@ -7,7 +14,7 @@
 3. npm install 
 4. cd client && npm install  
 
-# How to Setup database
+## How to Setup database
 
 1. create mLab account for free (https://mlab.com/) 
 2. Click `create new`
@@ -21,10 +28,25 @@
 10. Paste the MongoDB URI and *add your database username and password*
 
 
-#How to run Local host 
+## How to Run under Local Host 
 
 1. Go to root directory 
 2. npm run dev
+
+## Current Progress 
+
+### Done 
+1. Add item 
+2. Delete item 
+
+### In Progress 
+3. Renaming and update an item 
+4. Connect chechbox data to the server  
+5. Authentication 
+
+
+
+
 
 
 
