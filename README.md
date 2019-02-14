@@ -1,35 +1,35 @@
 # MERN-shopping-list 
 
-This is Shopping List app made with Node, Express, React/Redux, and MongoDB with Restful API architecture. 
-Please check out the production site from [here](https://guarded-crag-55709.herokuapp.com/)
+This is a shopping list app made with Node, Express, React/Redux, and MongoDB with Restful API architecture. 
+Please see the production site [here](https://guarded-crag-55709.herokuapp.com/).
 ___
 
 ## Technical Choices 
 
 ### Overall: 
 
-This is my first attempt to create a full stack application and the bulk of the time was spent on researching the best way to arthitect a full-stack application, best technical stack to use and investigating new tools I haven't dealt with before (Redux and MongoDB). Although it was great learning experience to enrich my understanding of full-stack application's architecture, I wasn't able to manage time correctly to satisfy all the required features. 
+This is my first attempt to create a full stack application and the bulk of the time was spent on researching the best way to arthitect a full-stack application, best technical stack to use and investigating new tools I haven't dealt with before (Redux and MongoDB). Although it was a great learning experience to enrich my understanding of full-stack application's architecture, I wasn't able to complete all of the required features in the time given to me.  
 
 ### React/Redux: 
 
 - Reason of the choice: 
 
-Since I have prior experience building react application and it's suited for buidling progressive web application with its performant and fast rendering, I've chosen React. Through building this app, I have tried to incorporate Redux, state management library and learned the concepts of the Redux. 
+I've chosen React because I have prior experience building React applications and it's suited for building progressive web applications with its performance and fast rendering. Through building this app, I have tried to incorporate Redux, state management library and learned the concepts of Redux. 
 
 - What I've learnt: 
 
-I learnt that Redux requires to set up a complex boiler plate codes in order to apply the Redux's flow. Also, I've realized that it requires additional learning/hands on experience to make React/Redux communicate with the database through its API endpoints. Because of the time constraint, I wasn't able to accomplish a couple of minimal requirements including making a request to update the existing item to the mongo Database, check on and off the item purchased checkbox, and configuring the router for displaying a register/login page. 
+I learnt that Redux requires setting up complex boiler plate codes in order to apply Redux's flow. Also, I've realized that it requires additional learning/hands on experience to make React/Redux communicate with the database through its API endpoints. Because of the time constraint, I wasn't able to accomplish a few of the requirements including making a request to update the existing item to the Mongo Database, check on and off the item purchased checkbox, and configuring the router for displaying a register/login page. 
 
 
 ### Node/Express: 
 
-Since I have an experience building Node applications and its great compatibility with React library, I've chosen Node/Express for back-end.  
+Since I have experience building Node applications and it has great compatibility with React library, I've chosen Node/Express for the back-end.  
 
 ### MongoDB/Mongoose/mLab: 
 
 - Reason of the choice: 
 
-Due to its ample resources online introducing how to hook up with mLab's cloud database management and Node, I've chosen MongoDB. 
+Due to its ample resources online introducing how to connect with mLab's cloud database management and Node, I've chosen MongoDB. 
 
 ___
 
@@ -66,13 +66,14 @@ ___
 ### Done 
 1. Add item 
 2. Delete item 
+3. Deployed on production with Heroku
 
 ### In Progress 
 1. Renaming and updating an item  
 
 Need to figure out how to define item reducers' update method. 
 
-2. Connect chechbox data to the server   
+2. Connect checkbox data to the server   
 
 Need to figure out how to update the existing data on MongoDB and reflect the returned state with ternary operator. 
 
@@ -82,7 +83,7 @@ Currrently investigating how to router those created pages.
 
 4. TDD test 
 
-Simply I didn't have enough time to write a test for testing each feature. 
+I didn't have enough time to write a test for testing each feature. 
 
 
 
