@@ -13,7 +13,7 @@ Please check out the production site from [here](https://guarded-crag-55709.hero
 1. git clone https://github.com/ArataKagan/mern-shopping-list
 2. cd mern-shopping-list 
 3. npm install 
-4. cd client && npm install  
+4. npm run client-install
 
 ## How to Setup database
 
@@ -26,7 +26,7 @@ Please check out the production site from [here](https://guarded-crag-55709.hero
 7. Fill in database username, database password  
 8. Copy the MongoDB URI and paste 
 9. Open `keys.js` under config foler 
-10. Paste the MongoDB URI and *add your database username and password*
+10. Paste the MongoDB URI and **add your database username and password**
 
 
 ## How to Run under Local Host 

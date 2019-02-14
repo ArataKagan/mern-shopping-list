@@ -1,14 +1,4 @@
 import React, { Component } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Container
-} from 'reactstrap';
 
 class AppNavbar extends Component {
     state = {
@@ -22,22 +12,25 @@ class AppNavbar extends Component {
     }
     render(){
         return (
-            <div>
-            <Navbar color="dark" dark expand="sm" className="mb-5">
-                <Container> 
-                    <NavbarBrand href="/">ShoppingList</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <NavLink href="https://github.com/aratakagan">Github</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Container>
+            <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+                <div className="container">
+                <a className="navbar-brand" href="/">Shopping List</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
-            </Navbar>
-        </div>
+                <div className="collapse navbar-collapse" id="mobile-nav">
+                    <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                        <a className="nav-link" href="/register">Sign Up</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/login">Login</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
         );
         
     }

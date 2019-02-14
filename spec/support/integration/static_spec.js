@@ -1,6 +1,6 @@
 const request = require("request");
 console.log('#1')
-const server = require("../../server");
+const server = require("../../../server");
 console.log('#2')
 const base = "http://localhost:5000/";
 console.log('#3')
