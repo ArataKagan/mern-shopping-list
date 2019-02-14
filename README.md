@@ -59,6 +59,8 @@ ___
 1. Go to root directory 
 2. npm run dev
 
+___ 
+
 ## Current Progress 
 
 ### Done 
@@ -66,11 +68,21 @@ ___
 2. Delete item 
 
 ### In Progress 
-3. Renaming and update an item 
-4. Connect chechbox data to the server  
-5. Authentication 
+1. Renaming and updating an item  
 
+Need to figure out how to define item reducers' update method. 
 
+2. Connect chechbox data to the server   
+
+Need to figure out how to update the existing data on MongoDB and reflect the returned state with ternary operator. 
+
+3. Routing and displaying Login and Register page 
+
+Currrently investigating how to router those created pages. 
+
+4. TDD test 
+
+Simply I didn't have enough time to write a test for testing each feature. 
 
 
 
