@@ -27,14 +27,11 @@ Since I have an experience building Node applications and its great compatibilit
 
 ### MongoDB/Mongoose/mLab: 
 
-- Reason of the choice 
+- Reason of the choice: 
 
-## 
+Due to its ample resources online introducing how to hook up with mLab's cloud database management and Node, I've chosen MongoDB. 
 
-
-
-
-
+___
 
 ## How to Clone 
 
