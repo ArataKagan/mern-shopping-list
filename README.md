@@ -2,9 +2,13 @@
 
 This is Shopping List app made with Node, Express, React/Redux, and MongoDB with Restful API architecture. 
 Please check out the production site from [here](https://guarded-crag-55709.herokuapp.com/)
+___
 
 ## Technical Choices 
 
+### Overall: 
+
+This is my first attempt to create a full stack application and the bulk of the time was spent on researching the best way to arthitect a full-stack application, best technical stack to use and investigating new tools I haven't dealt with before (Redux and MongoDB). Although it was great learning experience to enrich my understanding of full-stack application's architecture, I wasn't able to manage time correctly to satisfy all the required features. 
 
 ### React/Redux: 
 
@@ -14,19 +18,18 @@ Since I have prior experience building react application and it's suited for bui
 
 - What I've learnt: 
 
-I learnt that Redux requires to set up a complex boiler plate codes in order to apply the Redux's flow. Because of the time constraint, I wasn't able to accomplish a couple of minimal requirements including making a request to update the existing item to the mongo Database, check on and off the item purchased checkbox, and configuring the router for displaying a register/login page. 
+I learnt that Redux requires to set up a complex boiler plate codes in order to apply the Redux's flow. Also, I've realized that it requires additional learning/hands on experience to make React/Redux communicate with the database through its API endpoints. Because of the time constraint, I wasn't able to accomplish a couple of minimal requirements including making a request to update the existing item to the mongo Database, check on and off the item purchased checkbox, and configuring the router for displaying a register/login page. 
 
 
 ### Node/Express: 
 
 Since I have an experience building Node applications and its great compatibility with React library, I've chosen Node/Express for back-end.  
 
-
-
-
 ### MongoDB/Mongoose/mLab: 
 
+- Reason of the choice 
 
+## 
 
 
 
