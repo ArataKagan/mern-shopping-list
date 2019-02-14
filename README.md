@@ -1,4 +1,4 @@
-# mern-shopping-list 
+# MERN-shopping-list 
 
 This is Shopping List app made with Node, Express, React/Redux, and MongoDB with Restful API architecture. 
 Please check out the production site from [here](https://guarded-crag-55709.herokuapp.com/)
@@ -9,9 +9,11 @@ Please check out the production site from [here](https://guarded-crag-55709.hero
 ### React/Redux: 
 
 - Reason of the choice: 
-Since I have prior experience building react application and it's suited for buidling progressive web application with performant and fast rendering, I've chosen React. Through building this app, I have tried to incorporate Redux, state management library and learned the concepts of the Redux. 
+
+Since I have prior experience building react application and it's suited for buidling progressive web application with its performant and fast rendering, I've chosen React. Through building this app, I have tried to incorporate Redux, state management library and learned the concepts of the Redux. 
 
 - What I've learnt: 
+
 I learnt that Redux requires to set up a complex boiler plate codes in order to apply the Redux's flow. Because of the time constraint, I wasn't able to accomplish a couple of minimal requirements including making a request to update the existing item to the mongo Database, check on and off the item purchased checkbox, and configuring the router for displaying a register/login page. 
 
 
