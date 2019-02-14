@@ -3,7 +3,7 @@ import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEM_PURCHASED, ITEMS_LOADING} from '
 const initialState = {
     items: [],
     loading: false,
-    isPurchased: false
+    itemPurchased: {}
 }
 
 export default function(state = initialState, action) {

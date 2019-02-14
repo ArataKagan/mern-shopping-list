@@ -8,6 +8,10 @@ import PropTypes from 'prop-types'
 
 class ShoppingList extends Component {
 
+    state = {
+        itemChecked: {}
+    }
+
     componentDidMount() {
         this.props.getItems();
     }
@@ -16,8 +20,17 @@ class ShoppingList extends Component {
         this.props.deleteItem(id);
     } 
 
-    onPurchasedClick = id => {
-        this.props.purchasedItem(id);
+    onPurchasedClick = (id, e) => {
+        let itemChecked = this.state.itemChecked;
+        itemChecked[id] = e.target.checked;
+
+        const purchasedItemId = {
+            id : this.state.itemChecked
+        } 
+
+        console.log(Object.keys(purchasedItemId.id));
+        // return item's object and object's key
+        this.props.purchasedItem(purchasedItemId, Object.keys(purchasedItemId.id));
     }
  
     render() {

@@ -34,18 +34,11 @@ router.delete('/:id', (req, res) => {
 })
 
 // router.put('/:id', (req, res) => {
-//     Item.findById(req.params.id, function(err, item){
-//         if(err)
-//             res.send(err);
-//         console.log('inside of items.js');
-//         if(item.isPurchased === false){
-//             Item.update({'isPurchased': true});
-//             console.log('set true');
-//         } else {
-//             Item.update({'isPurchased': false});
-            
-//         }
-//     })
+//     var id = req.params.id; 
+//     var item = req.body;
+//     Item.
+    
+
     
 // })
 

@@ -33,13 +33,13 @@ export const deleteItem = id => dispatch => {
 )
 };
 
-export const purchasedItem = id => dispatch => {
+export const purchasedItem = (item, id) => dispatch => {
     axios
         .post(`api/items/${id}`, {isPurchased: true})
         .then(res => 
             dispatch({
                 type: ITEM_PURCHASED,
-                payload: id
+                payload: item
             }))
 }
 
